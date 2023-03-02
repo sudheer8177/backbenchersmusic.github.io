@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+body{
+  background: linear-gradient(35deg,#0a0a0a,#3a4452);
+}
+
+.Buttons{
+  display: flex;
+  justify-content: space-evenly;
+  color: #E96479;
+}
+
+.song_name{
+  text-align: center;
+  padding: 30px;
+  color: #FFC93C;
+  display: flex;
+  justify-content: space-around;
+  gap:50px;
+  
+}
+.song_name div h2{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 30px;
+  
+}
+
+.song_name div h4{
+font-family: 'Anton', sans-serif;
+ font-size: 15px; 
+ letter-spacing: 1px;
+}
+
+
+.loop{
+  color: #E96479;
+}
+.mute{
+  color:#E96479
+}
+.container{
+  width: 450px;
+  height: 650px;
+  background-color:transparent;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow:  -9px -9px 20px rgba(225,225,225,0.3);
+}
+.img_container{
+  margin:15px 87px;
+}
+
+.img_container img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+.progerss{
+ background-color:#fff;
+ height: 7px;
+ width: 80%;
+ margin: 0 auto;
+ margin-top: 50px;
+ border-radius: 25px;
+ cursor: pointer;
+ box-shadow:  -9px -9px 20px rgba(225,225,225,0.3);
+
+}
+.progerss_nav{
+  background-color:#E96479;
+  height: 7px;
+  width: 50%;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 1s;
+}
+.controls{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.fa-solid{
+  cursor: pointer;
+}
+
+.forward{
+  color: #E96479; 
+}
+.prev{
+ color: #E96479;
+}
+.play{
+  color: #E96479;
+}
+
+.rot{
+  animation: rotation  30s infinite linear;
+}
+
+@keyframes rotation {
+  from{
+    transform: rotate(360deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+
+.rights h3{
+  margin-top: 30px;
+  margin-right: 25px;
+  text-align: right;
+  font-family: 'Satisfy', cursive;
+  color:#FFC93C
+}
+.rights h3 span{
+  color: #E96479;
+  font-size: 30px;
+}
+
+.repeated{
+  color:#fff;
+}
+
+
+@media(max-width:420px){
+  .container{
+  flex-wrap: wrap;
+  height: 740px;
+  width: 90%;
+  margin-top:15px;
+  }
+  .image{
+    position: relative;
+    right: 40px;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width:320px) {
+  .container{
+    flex-wrap: wrap;
+    height:740px;
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .image{
+    position: relative;
+    right: 90px;
+    height: 80px;
+    width: 80px;
+  }
+  .img_container{
+    width:110px ;
+  }
+  .song_name{
+    margin-left: 12px;
+    width: 90%;
+    
+  }
+  .loop{
+    width: 20px;
+    height: 20px;
+  }
+  .names{
+    width: 100px;
+    font-size: 10px;
+  }
+}
