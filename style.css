@@ -83,7 +83,7 @@ font-family: 'Anton', sans-serif;
 .progerss_nav{
   background-color:#E96479;
   height: 7px;
-  width: 50%;
+  width: 0;
   border-radius: 25px;
   cursor: pointer;
   transition: all 1s;
